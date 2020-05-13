@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="selenide+appium_demo" parallel="tests" thread-count="2">
+
+    <test name="Nexus 5X">
+        <parameter name="deviceName" value="emulator-5554"/>
+        <parameter name="platformVersion" value="9"/>
+        <parameter name="systemPort" value="8200"/>
+        <classes>
+            <class name="by.st.selenide_appium_demo.test.CalculatorTest"/>
+        </classes>
+    </test>
+
+    <test name="Nokia">
+        <parameter name="deviceName" value="emulator-5556"/>
+        <parameter name="platformVersion" value="10"/>
+        <parameter name="systemPort" value="8201"/>
+        <classes>
+            <class name="by.st.selenide_appium_demo.test.CalculatorTest"/>
+        </classes>
+    </test>
+</suite>

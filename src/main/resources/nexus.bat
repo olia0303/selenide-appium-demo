@@ -1,0 +1,1 @@
+appium --nodeconfig nexus.json -p 5001 -bp 4725 --session-override
